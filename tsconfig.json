@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
+    "target": "ES6",
     "module": "CommonJS",
-    "rootDir": "./src",
+    "rootDir": "./",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "tests/**/*", "knexfile.ts"],
   "exclude": ["node_modules"]
 }

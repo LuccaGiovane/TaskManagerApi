@@ -1,6 +1,6 @@
 import { Task } from '../model/Task';
-import knex from '../database/knexfile';
-const db = require('knex')(knex.development);
+import knexConfig from '../../knexfile';
+const db = require('knex')(knexConfig.development);
 
 class TaskService {
     async create(task: Task): Promise<Task> {
